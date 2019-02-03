@@ -54,7 +54,7 @@ def convener_view(request):
                 startdate=from_date,
                 enddate=to_date,
                 award=award,
-                remarks=remarks
+                remarks=remarks,
             )
             messages.success(request,award+' are invited successfully')
             return HttpResponseRedirect('/spacs/convener_view')
